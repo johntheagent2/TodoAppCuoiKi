@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center"
+    tools:context=".SignUpActivity">
+
+    <ImageView
+        android:src="@drawable/ic_baseline_android_24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/email_create"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            tools:ignore="HardcodedText"
+            android:inputType="textEmailAddress"
+            android:imeOptions="actionNext"
+            android:textColor="@color/black"
+            />
+
+        <EditText
+            android:id="@+id/password_create"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            tools:ignore="HardcodedText"
+            android:inputType="textPassword"
+            android:imeOptions="actionDone"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create Account"
+        android:layout_margin="10dp"
+        tools:ignore="HardcodedText"/>
+
+
+</LinearLayout>
